@@ -1,0 +1,237 @@
+.left-to-right.animate-now {
+  position: relative;
+  animation-name: left2right;
+  animation-duration: 2s;
+}
+.right-to-left.animate-now {
+  position: relative;
+  animation-name: right2left;
+  animation-duration: 2s;
+}
+.top-to-bottom.animate-now {
+  position: relative;
+  animation-name: top2bottom;
+  animation-duration: 2s;
+}
+
+.bottom-to-top.animate-now {
+  position: relative;
+  animation-name: bottom2top;
+  animation-duration: 2s;
+}
+
+.zoom-in {
+  position: relative;
+  animation-name: zoomin;
+  animation-duration: 4s;
+}
+
+.hover-shake:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+.hover-change-color:hover {
+  color: #e93e36;
+}
+
+.rotate-icon-ff:hover{
+    animation-name: rotateIcon;
+    animation-duration: 2s;
+  }
+
+  .rotate-icon-ff:hover .rotate-icon-negative{
+  animation-name: rotateIconNegative;
+  transform-origin: center;
+  animation-duration: 2s;
+  }
+
+@keyframes rotateIcon {
+  0% {
+    transform: scale(1) rotate(45deg);
+  }
+  100% {
+    transform: scale(1.2) rotate(235deg);  
+  }
+}
+
+@keyframes rotateIconNegative {
+  0% {
+    transform: rotate(-45deg);
+  }
+  100% {    
+    transform:rotate(-235deg);
+  }
+}
+
+@keyframes left2right {
+  0% {
+    right: 0%;
+  }
+  80% {
+    left: 10%;
+  }
+  85% {
+    left: -10%;
+  }
+  95% {
+    left: 5%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes right2left {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+@keyframes left2right {
+  0% {
+    right: 100%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+@keyframes zoomin {
+  0% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes top2bottom {
+  0% {
+    transform: scale(0);
+    top: -25vh;
+  }
+  100% {
+    transform: scale(1);
+    top: 0;
+  }
+}
+@keyframes bottom2top {
+  0% {
+    transform: scale(0);
+    top: 25vh;
+  }
+  100% {
+    transform: scale(1);
+    top: 0;
+  }
+}
+
+@-webkit-keyframes fadeInTopLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, -100%, 0);
+    transform: translate3d(-100%, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+@keyframes fadeInTopLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, -100%, 0);
+    transform: translate3d(-100%, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+.animate_fadeInTopLeft.animate-now {
+  -webkit-animation-name: fadeInTopLeft;
+  animation-name: fadeInTopLeft;
+  animation-duration: 2s;
+}
+@-webkit-keyframes fadeInTopRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, -100%, 0);
+    transform: translate3d(100%, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+@keyframes fadeInTopRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, -100%, 0);
+    transform: translate3d(100%, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+.animate_fadeInTopRight.animate-now {
+  -webkit-animation-name: fadeInTopRight;
+  animation-name: fadeInTopRight;
+  animation-duration: 2s;
+}
+

@@ -1,0 +1,54 @@
+
+
+  @media only screen and (max-width: 768px) {
+   
+    .circle-dark{
+        width: 22.5% !important;
+      }
+
+      .circle-light{
+        width: 22.5% !important;
+      }
+
+      #moto,#about,#contact,#contact-info,#team{
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+   
+
+    .margin-top{
+        margin-top: 3rem !important;
+    }
+
+    
+
+  }
+
+  @media only screen and (max-width: 320px) {
+   
+    .circle-dark{
+        width: 30% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      .circle-light{
+        width: 30% !important;
+      } 
+      .s-adjust{
+        margin-top: -45px !important;
+        padding-top: 0px !important;
+    }
+
+     
+  }
+
+  @media only screen and (max-width: 450px) {
+   
+         .sm-adjust{
+        margin-top: -10% !important;
+    }
+
+     
+  }
+
